@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xml/XSLT/panelfile-2-9-6.xsl" type="text/xsl"?>
+<layout-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://jmri.org/xml/schema/layout-2-9-6.xsd">
+  <jmriversion>
+    <major>4</major>
+    <minor>18</minor>
+    <test>0</test>
+    <modifier />
+  </jmriversion>
+  <sensors class="jmri.jmrix.cmri.serial.configurexml.SerialSensorManagerXml">
+    <sensor inverted="false">
+      <systemName>CS1</systemName>
+      <userName>Block 1</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS2</systemName>
+      <userName>Block 2</userName>
+    </sensor>
+  </sensors>
+  <turnouts class="jmri.jmrix.cmri.serial.configurexml.SerialTurnoutManagerXml">
+    <operations automate="false">
+      <operation name="NoFeedback" class="jmri.configurexml.turnoutoperations.NoFeedbackTurnoutOperationXml" interval="300" maxtries="2" />
+      <operation name="Sensor" class="jmri.configurexml.turnoutoperations.SensorTurnoutOperationXml" interval="300" maxtries="3" />
+    </operations>
+    <defaultclosedspeed>Normal</defaultclosedspeed>
+    <defaultthrownspeed>Restricted</defaultthrownspeed>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT3</systemName>
+      <comment>SignalHead:RH1:Green</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT4</systemName>
+      <comment>SignalHead:RH1:Yellow</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT5</systemName>
+      <comment>SignalHead:RH1:Red</comment>
+    </turnout>
+  </turnouts>
+  <signalheads class="jmri.managers.configurexml.AbstractSignalHeadManagerXml">
+    <signalhead class="jmri.implementation.configurexml.TripleTurnoutSignalHeadXml">
+      <systemName>RH1</systemName>
+      <userName>2R</userName>
+      <turnoutname defines="green">CT3</turnoutname>
+      <turnoutname defines="yellow">CT4</turnoutname>
+      <turnoutname defines="red">CT5</turnoutname>
+    </signalhead>
+  </signalheads>
+  <signalmastlogics class="jmri.managers.configurexml.DefaultSignalMastLogicManagerXml">
+    <logicDelay>500</logicDelay>
+  </signalmastlogics>
+  <filehistory>
+    <operation>
+      <type>app</type>
+      <date>Thu Jul 02 11:03:45 CDT 2020</date>
+      <filename>JMRI program</filename>
+    </operation>
+    <operation>
+      <type>Load OK</type>
+      <date>Thu Jul 02 11:03:52 CDT 2020</date>
+      <filename>/home/pi/.jmri/My_JMRI_Railroad.jmri/home.xml</filename>
+      <filehistory>
+        <operation>
+          <type>app</type>
+          <date>Thu Jul 02 10:54:36 CDT 2020</date>
+          <filename>JMRI program</filename>
+        </operation>
+        <operation>
+          <type>Store</type>
+          <date>Thu Jul 02 10:56:31 CDT 2020</date>
+          <filename />
+        </operation>
+      </filehistory>
+    </operation>
+    <operation>
+      <type>Store</type>
+      <date>Thu Jul 02 11:05:25 CDT 2020</date>
+      <filename />
+    </operation>
+  </filehistory>
+  <!--Written by JMRI version 4.18+R37ad3d0 on Thu Jul 02 11:05:25 CDT 2020-->
+</layout-config>

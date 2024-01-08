@@ -1,0 +1,1259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xml/XSLT/panelfile-2-9-6.xsl" type="text/xsl"?>
+<layout-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://jmri.org/xml/schema/layout-2-9-6.xsd">
+  <jmriversion>
+    <major>4</major>
+    <minor>18</minor>
+    <test>0</test>
+    <modifier />
+  </jmriversion>
+  <sensors class="jmri.jmrix.cmri.serial.configurexml.SerialSensorManagerXml">
+    <sensor inverted="false">
+      <systemName>CS1</systemName>
+      <userName>Block 1</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS2</systemName>
+      <userName>Block 2</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS3</systemName>
+      <userName>Block 3</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS4</systemName>
+      <userName>Block 4</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS5</systemName>
+      <userName>Block 5</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS9</systemName>
+      <userName>5N In</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS10</systemName>
+      <userName>5R In</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS11</systemName>
+      <userName>7N In</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS12</systemName>
+      <userName>7R In</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS13</systemName>
+      <userName>15R In</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS14</systemName>
+      <userName>15N In</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS15</systemName>
+      <userName>17N In</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS16</systemName>
+      <userName>17R In</userName>
+    </sensor>
+  </sensors>
+  <turnouts class="jmri.jmrix.cmri.serial.configurexml.SerialTurnoutManagerXml">
+    <operations automate="false">
+      <operation name="NoFeedback" class="jmri.configurexml.turnoutoperations.NoFeedbackTurnoutOperationXml" interval="300" maxtries="2" />
+      <operation name="Raw" class="jmri.configurexml.turnoutoperations.RawTurnoutOperationXml" interval="300" maxtries="1" />
+      <operation name="Sensor" class="jmri.configurexml.turnoutoperations.SensorTurnoutOperationXml" interval="300" maxtries="3" />
+    </operations>
+    <defaultclosedspeed>Normal</defaultclosedspeed>
+    <defaultthrownspeed>Restricted</defaultthrownspeed>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1</systemName>
+      <userName>Signal2RGreen</userName>
+      <comment>SignalHead:RH1:Green</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT2</systemName>
+      <userName>Signal2RYellow</userName>
+      <comment>SignalHead:RH1:Yellow</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT3</systemName>
+      <userName>Signal2RRed</userName>
+      <comment>SignalHead:RH1:Red</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT4</systemName>
+      <userName>Signal2LGreen</userName>
+      <comment>SignalHead:LH1:Green</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT5</systemName>
+      <userName>Signal2LYellow</userName>
+      <comment>SignalHead:LH1:Yellow</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT6</systemName>
+      <userName>Signal2LRed</userName>
+      <comment>SignalHead:LH1:Red</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT7</systemName>
+      <userName>Signal4RGreen</userName>
+      <comment>SignalHead:RH2:Green</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT8</systemName>
+      <userName>Signal4RYellow</userName>
+      <comment>SignalHead:RH2:Yellow</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT9</systemName>
+      <userName>Signal4RRed</userName>
+      <comment>SignalHead:RH2:Red</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT10</systemName>
+      <userName>Signal4LGreen</userName>
+      <comment>SignalHead:LH2:Green</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT11</systemName>
+      <userName>Signal4LYellow</userName>
+      <comment>SignalHead:LH2:Yellow</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT12</systemName>
+      <userName>Signal4LRed</userName>
+      <comment>SignalHead:LH2:Red</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT13</systemName>
+      <userName>Signal6RGreen</userName>
+      <comment>SignalHead:RH3:Green</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT14</systemName>
+      <userName>Signal6RYellow</userName>
+      <comment>SignalHead:RH3:Yellow</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT15</systemName>
+      <userName>Signal6RRed</userName>
+      <comment>SignalHead:RH3:Red</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" numBits="2" controlType="1" automate="Off">
+      <systemName>CT17</systemName>
+      <userName>Turnout 7</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" numBits="2" controlType="1" automate="Off">
+      <systemName>CT21</systemName>
+      <userName>Turnout 5a</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" numBits="2" controlType="1" automate="Off">
+      <systemName>CT23</systemName>
+      <userName>Turnout 5b</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" numBits="2" controlType="1" automate="Off">
+      <systemName>CT25</systemName>
+      <userName>Turnout 15</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" numBits="2" controlType="1" automate="Off">
+      <systemName>CT27</systemName>
+      <userName>Turnout 17</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT29</systemName>
+      <userName>Signal10LGreen</userName>
+      <comment>SignalHead:LH5:Green</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT30</systemName>
+      <userName>Signal10LYellow</userName>
+      <comment>SignalHead:LH5:Yellow</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT31</systemName>
+      <userName>Signal10LRed</userName>
+      <comment>SignalHead:LH5:Red</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT33</systemName>
+      <userName>Signal10RGreen</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT34</systemName>
+      <userName>Signal10RYellow</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT35</systemName>
+      <userName>Signal10RRed</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT36</systemName>
+      <userName>Signal8LGreen</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT37</systemName>
+      <userName>Signal8LYellow</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT38</systemName>
+      <userName>Signal8LRed</userName>
+    </turnout>
+  </turnouts>
+  <memories class="jmri.managers.configurexml.DefaultMemoryManagerXml">
+    <memory value="L">
+      <systemName>IM:AUTO:0001</systemName>
+      <userName>2STK</userName>
+      <comment>Traffic Stick for #2</comment>
+    </memory>
+  </memories>
+  <signalheads class="jmri.managers.configurexml.AbstractSignalHeadManagerXml">
+    <signalhead class="jmri.implementation.configurexml.TripleTurnoutSignalHeadXml">
+      <systemName>LH1</systemName>
+      <userName>2L</userName>
+      <turnoutname defines="green">Signal2LGreen</turnoutname>
+      <turnoutname defines="yellow">Signal2LYellow</turnoutname>
+      <turnoutname defines="red">Signal2LRed</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.TripleTurnoutSignalHeadXml">
+      <systemName>LH2</systemName>
+      <userName>4L</userName>
+      <turnoutname defines="green">Signal4LGreen</turnoutname>
+      <turnoutname defines="yellow">Signal4LYellow</turnoutname>
+      <turnoutname defines="red">Signal4LRed</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.TripleTurnoutSignalHeadXml">
+      <systemName>LH4</systemName>
+      <userName>8L</userName>
+      <turnoutname defines="green">Signal8LGreen</turnoutname>
+      <turnoutname defines="yellow">Signal8LYellow</turnoutname>
+      <turnoutname defines="red">Signal8LRed</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.TripleTurnoutSignalHeadXml">
+      <systemName>LH5</systemName>
+      <userName>10L</userName>
+      <turnoutname defines="green">Signal10LGreen</turnoutname>
+      <turnoutname defines="yellow">Signal10LYellow</turnoutname>
+      <turnoutname defines="red">Signal10LRed</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.TripleTurnoutSignalHeadXml">
+      <systemName>RH1</systemName>
+      <userName>2R</userName>
+      <turnoutname defines="green">Signal2RGreen</turnoutname>
+      <turnoutname defines="yellow">Signal2RYellow</turnoutname>
+      <turnoutname defines="red">Signal2RRed</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.TripleTurnoutSignalHeadXml">
+      <systemName>RH2</systemName>
+      <userName>4R</userName>
+      <turnoutname defines="green">Signal4RGreen</turnoutname>
+      <turnoutname defines="yellow">Signal4RYellow</turnoutname>
+      <turnoutname defines="red">Signal4RRed</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.TripleTurnoutSignalHeadXml">
+      <systemName>RH3</systemName>
+      <userName>6R</userName>
+      <turnoutname defines="green">Signal6RGreen</turnoutname>
+      <turnoutname defines="yellow">Signal6RYellow</turnoutname>
+      <turnoutname defines="red">Signal6RRed</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.TripleTurnoutSignalHeadXml">
+      <systemName>RH5</systemName>
+      <userName>10R</userName>
+      <turnoutname defines="green">Signal10RGreen</turnoutname>
+      <turnoutname defines="yellow">Signal10RYellow</turnoutname>
+      <turnoutname defines="red">Signal10RRed</turnoutname>
+    </signalhead>
+  </signalheads>
+  <signalmasts class="jmri.managers.configurexml.DefaultSignalMastManagerXml">
+    <signalmast class="jmri.implementation.configurexml.SignalHeadSignalMastXml">
+      <systemName>IF$shsm:AAR-1946:SL-1-high-pbs(2L)</systemName>
+      <userName>2L</userName>
+      <unlit allowed="no" />
+      <disabledAspects>
+        <disabledAspect>Permissive</disabledAspect>
+      </disabledAspects>
+    </signalmast>
+    <signalmast class="jmri.implementation.configurexml.SignalHeadSignalMastXml">
+      <systemName>IF$shsm:AAR-1946:SL-1-high-pbs(2R)</systemName>
+      <userName>2R</userName>
+      <unlit allowed="no" />
+      <disabledAspects>
+        <disabledAspect>Permissive</disabledAspect>
+      </disabledAspects>
+    </signalmast>
+    <signalmast class="jmri.implementation.configurexml.SignalHeadSignalMastXml">
+      <systemName>IF$shsm:AAR-1946:SL-1-high-pbs(4L)</systemName>
+      <userName>4L</userName>
+      <unlit allowed="no" />
+      <disabledAspects>
+        <disabledAspect>Permissive</disabledAspect>
+      </disabledAspects>
+    </signalmast>
+    <signalmast class="jmri.implementation.configurexml.SignalHeadSignalMastXml">
+      <systemName>IF$shsm:AAR-1946:SL-1-high-pbs(4R)</systemName>
+      <userName>4R</userName>
+      <unlit allowed="no" />
+      <disabledAspects>
+        <disabledAspect>Permissive</disabledAspect>
+      </disabledAspects>
+    </signalmast>
+    <signalmast class="jmri.implementation.configurexml.SignalHeadSignalMastXml">
+      <systemName>IF$shsm:AAR-1946:SL-1-high-pbs(6R)</systemName>
+      <userName>6R</userName>
+      <unlit allowed="no" />
+      <disabledAspects>
+        <disabledAspect>Permissive</disabledAspect>
+      </disabledAspects>
+    </signalmast>
+    <signalmast class="jmri.implementation.configurexml.SignalHeadSignalMastXml">
+      <systemName>IF$shsm:AAR-1946:SL-1-high-pbs(8L)</systemName>
+      <userName>8L</userName>
+      <unlit allowed="no" />
+      <disabledAspects>
+        <disabledAspect>Permissive</disabledAspect>
+      </disabledAspects>
+    </signalmast>
+    <signalmast class="jmri.implementation.configurexml.SignalHeadSignalMastXml">
+      <systemName>IF$shsm:AAR-1946:SL-1-high-pbs(10L)</systemName>
+      <userName>10L</userName>
+      <unlit allowed="no" />
+      <disabledAspects>
+        <disabledAspect>Permissive</disabledAspect>
+      </disabledAspects>
+    </signalmast>
+    <signalmast class="jmri.implementation.configurexml.SignalHeadSignalMastXml">
+      <systemName>IF$shsm:AAR-1946:SL-1-high-pbs(10R)</systemName>
+      <userName>10R</userName>
+      <unlit allowed="no" />
+      <disabledAspects>
+        <disabledAspect>Permissive</disabledAspect>
+      </disabledAspects>
+    </signalmast>
+  </signalmasts>
+  <blocks class="jmri.configurexml.BlockManagerXml">
+    <defaultspeed>Normal</defaultspeed>
+    <block systemName="IB:AUTO:0003">
+      <systemName>IB:AUTO:0003</systemName>
+      <userName>Block 3</userName>
+    </block>
+    <block systemName="IB:AUTO:0005">
+      <systemName>IB:AUTO:0005</systemName>
+      <userName>Block 1</userName>
+    </block>
+    <block systemName="IB:AUTO:0006">
+      <systemName>IB:AUTO:0006</systemName>
+      <userName>Block 4</userName>
+    </block>
+    <block systemName="IB:AUTO:0007">
+      <systemName>IB:AUTO:0007</systemName>
+      <userName>Block 5</userName>
+    </block>
+    <block systemName="IB:AUTO:0008">
+      <systemName>IB:AUTO:0008</systemName>
+      <userName>Block 2</userName>
+    </block>
+    <block systemName="IB:AUTO:0003" length="0.0" curve="0">
+      <systemName>IB:AUTO:0003</systemName>
+      <userName>Block 3</userName>
+      <permissive>no</permissive>
+      <occupancysensor>Block 3</occupancysensor>
+      <path todir="32" fromdir="16" block="IB:AUTO:0008" />
+      <path todir="128" fromdir="64" block="IB:AUTO:0006" />
+    </block>
+    <block systemName="IB:AUTO:0005" length="0.0" curve="0">
+      <systemName>IB:AUTO:0005</systemName>
+      <userName>Block 1</userName>
+      <permissive>no</permissive>
+      <occupancysensor>Block 1</occupancysensor>
+      <path todir="128" fromdir="64" block="IB:AUTO:0007" />
+      <path todir="64" fromdir="128" block="IB:AUTO:0008" />
+    </block>
+    <block systemName="IB:AUTO:0006" length="0.0" curve="0">
+      <systemName>IB:AUTO:0006</systemName>
+      <userName>Block 4</userName>
+      <permissive>no</permissive>
+      <occupancysensor>Block 4</occupancysensor>
+      <path todir="128" fromdir="64" block="IB:AUTO:0007">
+        <beansetting setting="2">
+          <turnout systemName="Turnout 15" />
+        </beansetting>
+        <beansetting setting="2">
+          <turnout systemName="Turnout 17" />
+        </beansetting>
+      </path>
+      <path todir="64" fromdir="128" block="IB:AUTO:0003" />
+    </block>
+    <block systemName="IB:AUTO:0007" length="0.0" curve="0">
+      <systemName>IB:AUTO:0007</systemName>
+      <userName>Block 5</userName>
+      <permissive>no</permissive>
+      <occupancysensor>Block 5</occupancysensor>
+      <path todir="64" fromdir="128" block="IB:AUTO:0005" />
+      <path todir="64" fromdir="128" block="IB:AUTO:0006">
+        <beansetting setting="2">
+          <turnout systemName="Turnout 15" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0008" length="0.0" curve="0">
+      <systemName>IB:AUTO:0008</systemName>
+      <userName>Block 2</userName>
+      <permissive>no</permissive>
+      <occupancysensor>Block 2</occupancysensor>
+      <path todir="16" fromdir="32" block="IB:AUTO:0003" />
+      <path todir="128" fromdir="64" block="IB:AUTO:0005" />
+    </block>
+  </blocks>
+  <layoutblocks class="jmri.jmrit.display.layoutEditor.configurexml.LayoutBlockManagerXml" blockrouting="yes">
+    <layoutblock systemName="ILB1" occupancysensor="Block 5" occupiedsense="2" trackcolor="black" occupiedcolor="red" extracolor="white">
+      <systemName>ILB1</systemName>
+      <userName>Block 5</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB3" occupancysensor="Block 3" occupiedsense="2" trackcolor="black" occupiedcolor="red" extracolor="white">
+      <systemName>ILB3</systemName>
+      <userName>Block 3</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB4" occupancysensor="Block 2" occupiedsense="2" trackcolor="black" occupiedcolor="red" extracolor="white">
+      <systemName>ILB4</systemName>
+      <userName>Block 2</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB5" occupancysensor="Block 1" occupiedsense="2" trackcolor="black" occupiedcolor="red" extracolor="white">
+      <systemName>ILB5</systemName>
+      <userName>Block 1</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB6" occupancysensor="Block 4" occupiedsense="2" trackcolor="black" occupiedcolor="red" extracolor="white">
+      <systemName>ILB6</systemName>
+      <userName>Block 4</userName>
+    </layoutblock>
+  </layoutblocks>
+  <signalmastlogics class="jmri.managers.configurexml.DefaultSignalMastLogicManagerXml">
+    <logicDelay>500</logicDelay>
+  </signalmastlogics>
+  <logixs class="jmri.managers.configurexml.DefaultLogixManagerXml">
+    <logix userName="2RightClear" enabled="yes">
+      <systemName>IX2RClear</systemName>
+      <userName>2RightClear</userName>
+      <logixConditional systemName="IX2RClearC1" order="0" />
+    </logix>
+    <logix userName="2RightStop" enabled="yes">
+      <systemName>IX2Right</systemName>
+      <userName>2RightStop</userName>
+      <logixConditional systemName="IX2RightC1" order="0" />
+    </logix>
+    <logix userName="2Stick" enabled="yes">
+      <systemName>IX2Stick</systemName>
+      <userName>2Stick</userName>
+      <logixConditional systemName="IX2StickC1" order="0" />
+    </logix>
+    <logix userName="5Normal" enabled="yes">
+      <systemName>IX:AUTO:0001</systemName>
+      <userName>5Normal</userName>
+      <logixConditional systemName="IX:AUTO:0001C1" order="0" />
+    </logix>
+    <logix userName="5Reverse" enabled="yes">
+      <systemName>IX:AUTO:0002</systemName>
+      <userName>5Reverse</userName>
+      <logixConditional systemName="IX:AUTO:0002C1" order="0" />
+    </logix>
+    <logix userName="7Normal" enabled="yes">
+      <systemName>IX:AUTO:0003</systemName>
+      <userName>7Normal</userName>
+      <logixConditional systemName="IX:AUTO:0003C1" order="0" />
+    </logix>
+    <logix userName="7Reverse" enabled="yes">
+      <systemName>IX:AUTO:0004</systemName>
+      <userName>7Reverse</userName>
+      <logixConditional systemName="IX:AUTO:0004C1" order="0" />
+    </logix>
+    <logix userName="15Normal" enabled="yes">
+      <systemName>IX:AUTO:0005</systemName>
+      <userName>15Normal</userName>
+      <logixConditional systemName="IX:AUTO:0005C1" order="0" />
+    </logix>
+    <logix userName="15Reverse" enabled="yes">
+      <systemName>IX:AUTO:0006</systemName>
+      <userName>15Reverse</userName>
+      <logixConditional systemName="IX:AUTO:0006C1" order="0" />
+    </logix>
+    <logix userName="17Normal" enabled="yes">
+      <systemName>IX:AUTO:0007</systemName>
+      <userName>17Normal</userName>
+      <logixConditional systemName="IX:AUTO:0007C1" order="0" />
+    </logix>
+    <logix userName="17Reverse" enabled="yes">
+      <systemName>IX:AUTO:0008</systemName>
+      <userName>17Reverse</userName>
+      <logixConditional systemName="IX:AUTO:0008C1" order="0" />
+    </logix>
+    <logix userName="2LeftClear" enabled="yes">
+      <systemName>IX:AUTO:0009</systemName>
+      <userName>2LeftClear</userName>
+      <logixConditional systemName="IX:AUTO:0009C1" order="0" />
+    </logix>
+    <logix userName="2LeftStop" enabled="yes">
+      <systemName>IX:AUTO:0010</systemName>
+      <userName>2LeftStop</userName>
+      <logixConditional systemName="IX:AUTO:0010C1" order="0" />
+    </logix>
+    <logix userName="2RightApproach" enabled="yes">
+      <systemName>IX:AUTO:0011</systemName>
+      <userName>2RightApproach</userName>
+      <logixConditional systemName="IX:AUTO:0011C1" order="0" />
+    </logix>
+    <logix userName="2LeftApproach" enabled="yes">
+      <systemName>IX:AUTO:0012</systemName>
+      <userName>2LeftApproach</userName>
+      <logixConditional systemName="IX:AUTO:0012C1" order="0" />
+    </logix>
+    <logix userName="4RightClear" enabled="yes">
+      <systemName>IX:AUTO:0013</systemName>
+      <userName>4RightClear</userName>
+      <logixConditional systemName="IX:AUTO:0013C1" order="0" />
+    </logix>
+    <logix userName="4RightApproach" enabled="yes">
+      <systemName>IX:AUTO:0014</systemName>
+      <userName>4RightApproach</userName>
+      <logixConditional systemName="IX:AUTO:0014C1" order="0" />
+    </logix>
+    <logix userName="4RightStop" enabled="yes">
+      <systemName>IX:AUTO:0015</systemName>
+      <userName>4RightStop</userName>
+      <logixConditional systemName="IX:AUTO:0015C1" order="0" />
+    </logix>
+    <logix userName="4LeftClear" enabled="yes">
+      <systemName>IX:AUTO:0016</systemName>
+      <userName>4LeftClear</userName>
+      <logixConditional systemName="IX:AUTO:0016C1" order="0" />
+    </logix>
+    <logix userName="4LeftApproach" enabled="yes">
+      <systemName>IX:AUTO:0017</systemName>
+      <userName>4LeftApproach</userName>
+      <logixConditional systemName="IX:AUTO:0017C1" order="0" />
+    </logix>
+    <logix userName="4LeftStop" enabled="yes">
+      <systemName>IX:AUTO:0018</systemName>
+      <userName>4LeftStop</userName>
+      <logixConditional systemName="IX:AUTO:0018C1" order="0" />
+    </logix>
+    <logix userName="6RightClear" enabled="yes">
+      <systemName>IX:AUTO:0019</systemName>
+      <userName>6RightClear</userName>
+      <logixConditional systemName="IX:AUTO:0019C1" order="0" />
+    </logix>
+    <logix userName="6RightApproach" enabled="yes">
+      <systemName>IX:AUTO:0020</systemName>
+      <userName>6RightApproach</userName>
+      <logixConditional systemName="IX:AUTO:0020C1" order="0" />
+    </logix>
+    <logix userName="6RightStop" enabled="yes">
+      <systemName>IX:AUTO:0021</systemName>
+      <userName>6RightStop</userName>
+      <logixConditional systemName="IX:AUTO:0021C1" order="0" />
+    </logix>
+    <logix userName="10LeftClear" enabled="yes">
+      <systemName>IX:AUTO:0022</systemName>
+      <userName>10LeftClear</userName>
+      <logixConditional systemName="IX:AUTO:0022C1" order="0" />
+    </logix>
+    <logix userName="10LeftApproach" enabled="yes">
+      <systemName>IX:AUTO:0023</systemName>
+      <userName>10LeftApproach</userName>
+      <logixConditional systemName="IX:AUTO:0023C1" order="0" />
+    </logix>
+    <logix userName="10LeftStop" enabled="yes">
+      <systemName>IX:AUTO:0024</systemName>
+      <userName>10LeftStop</userName>
+      <logixConditional systemName="IX:AUTO:0024C1" order="0" />
+    </logix>
+    <logix userName="8LeftClear" enabled="yes">
+      <systemName>IX:AUTO:0025</systemName>
+      <userName>8LeftClear</userName>
+      <logixConditional systemName="IX:AUTO:0025C1" order="0" />
+    </logix>
+    <logix userName="8LeftApproach" enabled="yes">
+      <systemName>IX:AUTO:0026</systemName>
+      <userName>8LeftApproach</userName>
+      <logixConditional systemName="IX:AUTO:0026C1" order="0" />
+    </logix>
+    <logix userName="8LeftStop" enabled="yes">
+      <systemName>IX:AUTO:0027</systemName>
+      <userName>8LeftStop</userName>
+      <logixConditional systemName="IX:AUTO:0027C1" order="0" />
+    </logix>
+    <logix userName="10RightStop" enabled="yes">
+      <systemName>IX:AUTO:0028</systemName>
+      <userName>10RightStop</userName>
+      <logixConditional systemName="IX:AUTO:0028C1" order="0" />
+    </logix>
+    <logix userName="10RightApproach" enabled="yes">
+      <systemName>IX:AUTO:0029</systemName>
+      <userName>10RightApproach</userName>
+      <logixConditional systemName="IX:AUTO:0029C1" order="0" />
+    </logix>
+    <logix userName="10RightClear" enabled="yes">
+      <systemName>IX:AUTO:0030</systemName>
+      <userName>10RightClear</userName>
+      <logixConditional systemName="IX:AUTO:0030C1" order="0" />
+    </logix>
+  </logixs>
+  <conditionals class="jmri.managers.configurexml.DefaultConditionalManagerXml">
+    <conditional systemName="IX2RClearC1" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX2RClearC1</systemName>
+      <conditionalStateVariable operator="4" negated="no" type="2" systemName="CS1" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS2" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="2R" data="-1" delay="0" string="Clear" />
+    </conditional>
+    <conditional systemName="IX2RightC1" antecedent="R1" logicType="1" triggerOnChange="yes">
+      <systemName>IX2RightC1</systemName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="CS1" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="2R" data="-1" delay="0" string="Stop and Proceed" />
+    </conditional>
+    <conditional systemName="IX2StickC1" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX2StickC1</systemName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="CS4" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="1" systemName="CS3" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="12" systemName="2STK" data="-1" delay="0" string="L" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0001C1" userName="Set turnout 5 Normal" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0001C1</systemName>
+      <userName>Set turnout 5 Normal</userName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="5N In" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS1" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="2" systemName="Turnout 5a" data="2" delay="0" string="" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0002C1" userName="Set turnout 5 Reverse" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0002C1</systemName>
+      <userName>Set turnout 5 Reverse</userName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="5R In" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS1" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="2" systemName="Turnout 5a" data="4" delay="0" string="" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0003C1" userName="Set turnout 7 Normal" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0003C1</systemName>
+      <userName>Set turnout 7 Normal</userName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="7N In" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS1" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="2" systemName="Turnout 7" data="2" delay="0" string="" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0004C1" userName="Set turnout 7 Reverse" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0004C1</systemName>
+      <userName>Set turnout 7 Reverse</userName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="7R In" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS1" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="2" systemName="Turnout 7" data="4" delay="0" string="" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0005C1" userName="15Normal" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0005C1</systemName>
+      <userName>15Normal</userName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="15N In" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS4" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="2" systemName="Turnout 15" data="2" delay="0" string="" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0006C1" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0006C1</systemName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="15R In" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS4" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="2" systemName="Turnout 15" data="4" delay="0" string="" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0007C1" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0007C1</systemName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="17N In" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS4" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="2" systemName="Turnout 17" data="2" delay="0" string="" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0008C1" userName="17Reverse" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0008C1</systemName>
+      <userName>17Reverse</userName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="17R In" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS4" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="2" systemName="Turnout 17" data="4" delay="0" string="" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0009C1" userName="2LeftClearLXI" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0009C1</systemName>
+      <userName>2LeftClearLXI</userName>
+      <conditionalStateVariable operator="4" negated="no" type="2" systemName="CS1" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS5" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="2L" data="-1" delay="0" string="Clear" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0010C1" userName="SetLH1Stop" antecedent="R1" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0010C1</systemName>
+      <userName>SetLH1Stop</userName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="CS1" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="2L" data="-1" delay="0" string="Stop and Proceed" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0011C1" userName="2RAPR" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0011C1</systemName>
+      <userName>2RAPR</userName>
+      <conditionalStateVariable operator="4" negated="no" type="2" systemName="CS1" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="1" systemName="CS2" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="2R" data="-1" delay="0" string="Approach" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0012C1" userName="2LAPR" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0012C1</systemName>
+      <userName>2LAPR</userName>
+      <conditionalStateVariable operator="4" negated="no" type="2" systemName="CS1" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="1" systemName="CS5" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="2L" data="-1" delay="0" string="Approach" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0013C1" userName="4RightClear" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0013C1</systemName>
+      <userName>4RightClear</userName>
+      <conditionalStateVariable operator="4" negated="no" type="2" systemName="CS2" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS3" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="4R" data="-1" delay="0" string="Clear" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0014C1" userName="4RightApproach" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0014C1</systemName>
+      <userName>4RightApproach</userName>
+      <conditionalStateVariable operator="4" negated="no" type="2" systemName="CS2" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="1" systemName="CS3" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="4R" data="-1" delay="0" string="Approach" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0015C1" userName="4RightStop" antecedent="R1" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0015C1</systemName>
+      <userName>4RightStop</userName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="CS2" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="4R" data="-1" delay="0" string="Stop and Proceed" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0016C1" userName="4LeftClear" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0016C1</systemName>
+      <userName>4LeftClear</userName>
+      <conditionalStateVariable operator="4" negated="no" type="2" systemName="CS1" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS2" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="4L" data="-1" delay="0" string="Clear" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0017C1" userName="4LeftApproach" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0017C1</systemName>
+      <userName>4LeftApproach</userName>
+      <conditionalStateVariable operator="4" negated="no" type="2" systemName="CS2" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="1" systemName="CS1" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="4L" data="-1" delay="0" string="Approach" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0018C1" userName="4LeftStop" antecedent="R1" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0018C1</systemName>
+      <userName>4LeftStop</userName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="CS2" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="4L" data="-1" delay="0" string="Stop and Proceed" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0019C1" userName="6RightClear" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0019C1</systemName>
+      <userName>6RightClear</userName>
+      <conditionalStateVariable operator="4" negated="no" type="2" systemName="CS3" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS4" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="6R" data="-1" delay="0" string="Clear" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0020C1" userName="6RightApproach" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0020C1</systemName>
+      <userName>6RightApproach</userName>
+      <conditionalStateVariable operator="4" negated="no" type="2" systemName="CS3" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="1" systemName="CS4" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="6R" data="-1" delay="0" string="Approach" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0021C1" userName="6RightStop" antecedent="R1" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0021C1</systemName>
+      <userName>6RightStop</userName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="CS3" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="6R" data="-1" delay="0" string="Stop and Proceed" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0022C1" userName="Signal10LeftClear" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0022C1</systemName>
+      <userName>Signal10LeftClear</userName>
+      <conditionalStateVariable operator="4" negated="no" type="2" systemName="CS5" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS4" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="10L" data="-1" delay="0" string="Clear" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0023C1" userName="Signal10LeftApproach" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0023C1</systemName>
+      <userName>Signal10LeftApproach</userName>
+      <conditionalStateVariable operator="4" negated="no" type="2" systemName="CS5" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="1" systemName="CS4" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="IF$shsm:AAR-1946:SL-1-high-pbs(10L)" data="-1" delay="0" string="Approach" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0024C1" userName="Signal10LeftStop" antecedent="R1" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0024C1</systemName>
+      <userName>Signal10LeftStop</userName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="CS5" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="IF$shsm:AAR-1946:SL-1-high-pbs(10L)" data="-1" delay="0" string="Stop and Proceed" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0025C1" userName="8LeftClear" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0025C1</systemName>
+      <userName>8LeftClear</userName>
+      <conditionalStateVariable operator="4" negated="no" type="2" systemName="CS3" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS4" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="8L" data="-1" delay="0" string="Clear" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0026C1" userName="8LeftApproach" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0026C1</systemName>
+      <userName>8LeftApproach</userName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="CS3" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS4" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="8L" data="-1" delay="0" string="Approach" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0027C1" userName="8LeftStop" antecedent="R1" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0027C1</systemName>
+      <userName>8LeftStop</userName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="CS4" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="8L" data="-1" delay="0" string="Stop and Proceed" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0028C1" userName="10RightStop" antecedent="R1" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0028C1</systemName>
+      <userName>10RightStop</userName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="CS5" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="10R" data="-1" delay="0" string="Stop and Proceed" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0029C1" userName="10RightApproach" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0029C1</systemName>
+      <userName>10RightApproach</userName>
+      <conditionalStateVariable operator="4" negated="no" type="1" systemName="CS1" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS5" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="10R" data="-1" delay="0" string="Approach" />
+    </conditional>
+    <conditional systemName="IX:AUTO:0030C1" userName="10RightClear" antecedent="R1 and R2" logicType="1" triggerOnChange="yes">
+      <systemName>IX:AUTO:0030C1</systemName>
+      <userName>10RightClear</userName>
+      <conditionalStateVariable operator="4" negated="no" type="2" systemName="CS1" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalStateVariable operator="1" negated="no" type="2" systemName="CS5" dataString="" num1="0" num2="0" triggersCalc="yes" />
+      <conditionalAction option="1" type="37" systemName="10R" data="-1" delay="0" string="Clear" />
+    </conditional>
+  </conditionals>
+  <LayoutEditor class="jmri.jmrit.display.layoutEditor.configurexml.LayoutEditorXml" name="My Layout" x="47" y="63" windowheight="503" windowwidth="666" panelheight="490" panelwidth="722" sliders="no" scrollable="none" editable="no" positionable="yes" controlling="yes" animating="yes" showhelpbar="no" drawgrid="yes" snaponadd="yes" snaponmove="yes" antialiasing="no" turnoutcircles="yes" tooltipsnotedit="no" tooltipsinedit="yes" mainlinetrackwidth="4" xscale="1.0" yscale="1.0" sidetrackwidth="4" defaulttrackcolor="black" defaultoccupiedtrackcolor="red" defaultalternativetrackcolor="white" defaulttextcolor="black" turnoutcirclecolor="black" turnoutcirclesize="4" turnoutdrawunselectedleg="yes" turnoutbx="20.0" turnoutcx="20.0" turnoutwid="10.0" xoverlong="30.0" xoverhwid="10.0" xovershort="10.0" autoblkgenerate="no" redBackground="192" greenBackground="192" blueBackground="192" gridSize="10" gridSize2nd="10" openDispatcher="no" useDirectTurnoutControl="no">
+    <layoutTrackDrawingOptions name="My Layout" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutTrackDrawingOptionsXml">
+      <mainBallastColor>#000000</mainBallastColor>
+      <mainBallastWidth>0</mainBallastWidth>
+      <mainBlockLineDashPercentageX10>0</mainBlockLineDashPercentageX10>
+      <mainBlockLineWidth>4</mainBlockLineWidth>
+      <mainRailColor>#000000</mainRailColor>
+      <mainRailCount>1</mainRailCount>
+      <mainRailGap>0</mainRailGap>
+      <mainRailWidth>5</mainRailWidth>
+      <mainTieColor>#000000</mainTieColor>
+      <mainTieGap>0</mainTieGap>
+      <mainTieLength>0</mainTieLength>
+      <mainTieWidth>0</mainTieWidth>
+      <sideBallastColor>#000000</sideBallastColor>
+      <sideBallastWidth>0</sideBallastWidth>
+      <sideBlockLineDashPercentageX10>0</sideBlockLineDashPercentageX10>
+      <sideBlockLineWidth>4</sideBlockLineWidth>
+      <sideRailColor>#A0A0A0</sideRailColor>
+      <sideRailCount>1</sideRailCount>
+      <sideRailGap>0</sideRailGap>
+      <sideRailWidth>4</sideRailWidth>
+      <sideTieColor>#000000</sideTieColor>
+      <sideTieGap>0</sideTieGap>
+      <sideTieLength>0</sideTieLength>
+      <sideTieWidth>0</sideTieWidth>
+    </layoutTrackDrawingOptions>
+    <signalmasticon signalmast="2R" x="200" y="410" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="false" editable="false" degrees="90" clickmode="0" litmode="false" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <signalmasticon signalmast="2L" x="460" y="373" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="false" editable="false" degrees="270" clickmode="0" litmode="false" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <signalmasticon signalmast="4R" x="498" y="410" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="false" editable="false" degrees="90" clickmode="0" litmode="false" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <signalmasticon signalmast="4L" x="625" y="250" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="false" editable="false" degrees="180" clickmode="0" litmode="false" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <signalmasticon signalmast="6R" x="660" y="210" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="false" editable="false" clickmode="0" litmode="false" degrees="0" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <signalmasticon signalmast="10L" x="165" y="373" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="false" editable="false" degrees="270" clickmode="0" litmode="false" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <signalmasticon signalmast="10R" x="240" y="83" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="false" editable="false" degrees="270" clickmode="0" litmode="false" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <signalmasticon signalmast="8L" x="232" y="109" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="false" editable="false" degrees="90" clickmode="0" litmode="false" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <layoutturnout ident="TO3" type="6" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="270.0" ycen="380.0" xa="246.62313842773438" ya="360.1534118652344" xb="339.9999061378052" yb="360.0000000037943" xc="293.3768615722656" yc="399.8465881347656" xd="200.00009386219477" yd="399.9999999962057" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutTurnoutXml" turnoutname="Turnout 5a" secondturnoutname="Turnout 5b" blockname="Block 1" connectcname="T3" connectdname="T9" />
+    <layoutturnout ident="TO4" type="2" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="460.0" ycen="400.0" xa="500.0" ya="400.0" xb="420.0" yb="400.0" xc="430.0" yc="420.0" xd="500.0" yd="400.0" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutTurnoutXml" turnoutname="Turnout 7" blockname="Block 1" connectaname="T1" connectbname="T4" connectcname="T13" />
+    <layoutturnout ident="TO1" type="2" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="320.0" ycen="100.0" xa="360.0" ya="100.0" xb="280.0" yb="100.0" xc="290.0" yc="120.0" xd="360.0" yd="100.0" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutTurnoutXml" turnoutname="Turnout 15" blockname="Block 4" connectaname="T8" connectbname="T11" connectcname="T17" />
+    <layoutturnout ident="TO2" type="1" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="440.0" ycen="100.0" xa="470.0" ya="100.0" xb="410.0" yb="100.0" xc="420.0" yc="90.0" xd="470.0" yd="100.0" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutTurnoutXml" turnoutname="Turnout 17" blockname="Block 4" connectaname="T6" connectbname="T8" connectcname="T19" />
+    <tracksegment ident="T1" blockname="Block 2" connect1name="TO4" type1="2" connect2name="A6" type2="1" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T2" blockname="Block 3" connect1name="A1" type1="1" connect2name="A11" type2="1" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T3" blockname="Block 1" connect1name="TO3" type1="4" connect2name="A2" type2="1" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T4" blockname="Block 1" connect1name="A2" type1="1" connect2name="TO4" type2="3" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T5" blockname="Block 2" connect1name="A4" type1="1" connect2name="A1" type2="1" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T6" blockname="Block 3" connect1name="A5" type1="1" connect2name="TO2" type2="2" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T8" blockname="Block 4" connect1name="TO1" type1="2" connect2name="TO2" type2="3" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T9" blockname="Block 5" connect1name="TO3" type1="5" connect2name="A10" type2="1" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T10" blockname="Block 5" connect1name="A7" type1="1" connect2name="A8" type2="1" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T11" blockname="Block 5" connect1name="A8" type1="1" connect2name="TO1" type2="3" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T12" blockname="Block 5" connect1name="A9" type1="1" connect2name="A7" type2="1" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T14" blockname="Block 5" connect1name="A10" type1="1" connect2name="A9" type2="1" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T15" blockname="Block 3" connect1name="A11" type1="1" connect2name="A5" type2="1" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T7" blockname="Block 2" connect1name="A6" type1="1" connect2name="A4" type2="1" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T13" blockname="Block 1" connect1name="TO4" type1="4" connect2name="A12" type2="1" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T16" connect1name="A12" type1="1" connect2name="EB1" type2="1" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T17" connect1name="EB2" type1="1" connect2name="TO1" type2="4" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T18" connect1name="EB3" type1="1" connect2name="A3" type2="1" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T19" blockname="Block 4" connect1name="A3" type1="1" connect2name="TO2" type2="4" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <positionablepoint ident="A1" type="1" x="650.0" y="250.0" connect1name="T5" connect2name="T2" eastboundsignal="2R" westboundsignal="2L" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A2" type="1" x="340.0" y="400.0" connect1name="T3" connect2name="T4" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A4" type="1" x="650.0" y="320.0" connect1name="T7" connect2name="T5" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A5" type="1" x="570.0" y="100.0" connect1name="T15" connect2name="T6" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A7" type="1" x="60.0" y="180.0" connect1name="T12" connect2name="T10" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A8" type="1" x="140.0" y="100.0" connect1name="T10" connect2name="T11" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A9" type="1" x="60.0" y="320.0" connect1name="T14" connect2name="T12" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A10" type="1" x="140.0" y="400.0" connect1name="T9" connect2name="T14" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A11" type="1" x="650.0" y="180.0" connect1name="T2" connect2name="T15" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A6" type="1" x="570.0" y="400.0" connect1name="T1" connect2name="T7" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB1" type="2" x="120.0" y="440.0" connect1name="T16" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A12" type="1" x="400.0" y="440.0" connect1name="T13" connect2name="T16" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB2" type="2" x="210.0" y="180.0" connect1name="T17" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB3" type="2" x="180.0" y="80.0" connect1name="T18" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A3" type="1" x="400.0" y="80.0" connect1name="T18" connect2name="T19" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+  </LayoutEditor>
+  <paneleditor class="jmri.jmrit.display.panelEditor.configurexml.PanelEditorXml" name="Panel " x="840" y="84" height="865" width="1065" editable="yes" positionable="yes" showtooltips="yes" controlling="yes" hide="yes" panelmenu="yes" scrollable="both" redBackground="255" greenBackground="255" blueBackground="255">
+    <positionablelabel x="0" y="0" level="1" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USSpanels/Panels/USS-15.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <sensoricon sensor="Block 2" x="357" y="184" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/USSpanels/Lamps/lamp-w.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="Block 3" x="444" y="185" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/USSpanels/Lamps/lamp-w.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="Block 1" x="233" y="185" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/USSpanels/Lamps/lamp-r.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/USSpanels/Lamps/lamp-dr.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="Block 4" x="532" y="184" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/USSpanels/Lamps/lamp-r.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/USSpanels/Lamps/lamp-dr.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <positionablelabel x="204" y="162" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/sw-l.gif" degrees="0" scale="1.0">
+        <rotation>2</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="179" y="192" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="246" y="163" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="238" y="192" level="7" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="330" y="192" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="356" y="192" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="382" y="192" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="416" y="192" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="442" y="192" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="468" y="192" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="501" y="192" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="552" y="191" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/sw-r.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="527" y="192" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="586" y="192" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="592" y="221" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <signalmasticon signalmast="2R" x="176" y="210" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="0" litmode="false" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <signalmasticon signalmast="2L" x="286" y="168" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="270" clickmode="0" litmode="false" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <positionablelabel x="145" y="192" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="93" y="192" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="617" y="192" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="643" y="192" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="119" y="192" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="669" y="192" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <sensoricon sensor="Block 5" x="122" y="185" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/USSpanels/Lamps/lamp-w.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="Block 5" x="644" y="185" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/USSpanels/Lamps/lamp-w.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/USSpanels/Lamps/lamp-dw.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <signalmasticon signalmast="4R" x="325" y="210" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="0" litmode="false" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <signalmasticon signalmast="4L" x="373" y="168" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="270" clickmode="0" litmode="false" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <turnouticon turnout="Turnout 7" x="262" y="191" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" tristate="false" momentary="false" directControl="false" class="jmri.jmrit.display.configurexml.TurnoutIconXml">
+      <icons>
+        <closed url="program:resources/icons/USS/proto/sw-l.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </closed>
+        <thrown url="program:resources/icons/USS/proto/sw-l.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </thrown>
+        <unknown url="program:resources/icons/USS/proto/sw-l.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </unknown>
+        <inconsistent url="program:resources/icons/USS/proto/sw-l.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </inconsistent>
+      </icons>
+      <iconmaps />
+    </turnouticon>
+    <positionablelabel x="297" y="192" level="8" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="230" y="221" level="3" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" icon="yes" class="jmri.jmrit.display.configurexml.PositionableLabelXml">
+      <icon url="program:resources/icons/USS/proto/block.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </icon>
+    </positionablelabel>
+    <positionablelabel x="227" y="137" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="East Yard" fontname="Liberation Sans Bold" size="16" style="1" red="255" green="255" blue="255" hasBackground="no" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="158" y="234" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="Program Track" fontname="PibotoLt Bold" size="14" style="1" red="255" green="255" blue="255" hasBackground="no" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="593" y="230" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="Parking Spur" fontname="PibotoLt Bold" size="14" style="1" red="255" green="255" blue="255" hasBackground="no" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <signalmasticon signalmast="6R" x="415" y="210" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="0" litmode="false" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <signalmasticon signalmast="10L" x="134" y="168" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="270" clickmode="0" litmode="false" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <signalmasticon signalmast="10R" x="615" y="205" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="0" litmode="false" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <signalmasticon signalmast="8L" x="576" y="172" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="270" clickmode="0" litmode="false" scale="1.0" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <turnouticon turnout="Turnout 15" x="509" y="162" level="2" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" tristate="false" momentary="false" directControl="false" class="jmri.jmrit.display.configurexml.TurnoutIconXml">
+      <icons>
+        <closed url="program:resources/icons/USS/proto/sw-l.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </closed>
+        <thrown url="program:resources/icons/USS/proto/sw-l.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </thrown>
+        <unknown url="program:resources/icons/USS/proto/sw-l.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </unknown>
+        <inconsistent url="program:resources/icons/USS/proto/sw-l.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </inconsistent>
+      </icons>
+      <iconmaps />
+    </turnouticon>
+    <positionablelabel x="537" y="135" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="Industry Spur" fontname="PibotoLt Bold" size="16" style="1" red="255" green="255" blue="255" hasBackground="no" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+  </paneleditor>
+  <filehistory>
+    <operation>
+      <type>app</type>
+      <date>Sun Dec 11 19:28:16 CST 2022</date>
+      <filename>JMRI program</filename>
+    </operation>
+    <operation>
+      <type>Load OK</type>
+      <date>Thu Dec 15 17:31:41 CST 2022</date>
+      <filename>/home/pi/.jmri/My_JMRI_Railroad.jmri/home.xml</filename>
+      <filehistory>
+        <operation>
+          <type>app</type>
+          <date>Tue Aug 23 07:03:19 CDT 2022</date>
+          <filename>JMRI program</filename>
+        </operation>
+        <operation>
+          <type>Load OK</type>
+          <date>Tue Aug 23 07:03:34 CDT 2022</date>
+          <filename>/home/pi/.jmri/My_JMRI_Railroad.jmri/home.xml</filename>
+          <filehistory>
+            <operation>
+              <type>app</type>
+              <date>Wed Aug 17 09:47:13 CDT 2022</date>
+              <filename>JMRI program</filename>
+            </operation>
+            <operation>
+              <type>Load OK</type>
+              <date>Wed Aug 17 09:58:31 CDT 2022</date>
+              <filename>/home/pi/.jmri/My_JMRI_Railroad.jmri/home.xml</filename>
+              <filehistory>
+                <operation>
+                  <type>app</type>
+                  <date>Thu Aug 11 09:35:55 CDT 2022</date>
+                  <filename>JMRI program</filename>
+                </operation>
+                <operation>
+                  <type>Load OK</type>
+                  <date>Thu Aug 11 09:36:11 CDT 2022</date>
+                  <filename>/home/pi/.jmri/My_JMRI_Railroad.jmri/home.xml</filename>
+                  <filehistory>
+                    <operation>
+                      <type>app</type>
+                      <date>Mon Aug 01 17:18:38 CDT 2022</date>
+                      <filename>JMRI program</filename>
+                    </operation>
+                    <operation>
+                      <type>Load OK</type>
+                      <date>Mon Aug 01 17:18:54 CDT 2022</date>
+                      <filename>/home/pi/.jmri/My_JMRI_Railroad.jmri/home.xml</filename>
+                      <filehistory>
+                        <operation>
+                          <type>app</type>
+                          <date>Mon Aug 01 17:16:05 CDT 2022</date>
+                          <filename>JMRI program</filename>
+                        </operation>
+                        <operation>
+                          <type>Load OK</type>
+                          <date>Mon Aug 01 17:16:19 CDT 2022</date>
+                          <filename>/home/pi/.jmri/My_JMRI_Railroad.jmri/home.xml</filename>
+                        </operation>
+                        <operation>
+                          <type>Store</type>
+                          <date>Mon Aug 01 17:34:20 CDT 2022</date>
+                          <filename />
+                        </operation>
+                      </filehistory>
+                    </operation>
+                    <operation>
+                      <type>Store</type>
+                      <date>Thu Aug 11 08:51:42 CDT 2022</date>
+                      <filename />
+                    </operation>
+                  </filehistory>
+                </operation>
+                <operation>
+                  <type>Store</type>
+                  <date>Sun Aug 14 18:31:49 CDT 2022</date>
+                  <filename />
+                </operation>
+              </filehistory>
+            </operation>
+            <operation>
+              <type>Store</type>
+              <date>Tue Aug 23 07:00:04 CDT 2022</date>
+              <filename />
+            </operation>
+          </filehistory>
+        </operation>
+        <operation>
+          <type>Store</type>
+          <date>Sat Sep 03 15:44:25 CDT 2022</date>
+          <filename />
+        </operation>
+      </filehistory>
+    </operation>
+    <operation>
+      <type>Store</type>
+      <date>Thu Jan 12 18:38:37 CST 2023</date>
+      <filename />
+    </operation>
+  </filehistory>
+  <!--Written by JMRI version 4.18+R37ad3d0 on Thu Jan 12 18:38:37 CST 2023-->
+</layout-config>

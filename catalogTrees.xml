@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xml/XSLT/panelfile.xsl" type="text/xsl"?>
+<!DOCTYPE catalogTrees SYSTEM "/xml/DTD/catalogTree.dtd">
+<catalogTrees class="jmri.jmrit.catalog.DefaultCatalogTreeManagerConfigXML">
+  <!--Written by JMRI version 4.18+R37ad3d0 on Tue Aug 23 07:00:11 CDT 2022-->
+  <catalogTree systemName="NXDI" userName="Default Icons">
+    <node nodeName="Default Icons">
+      <node nodeName="LeftTurnout">
+        <leaf name="TurnoutStateClosed" path="program:resources/icons/USS/proto/sw-l.gif" />
+        <leaf name="TurnoutStateThrown" path="program:resources/icons/USS/proto/sw-l.gif" />
+        <leaf name="BeanStateUnknown" path="program:resources/icons/USS/proto/sw-l.gif" />
+        <leaf name="BeanStateInconsistent" path="program:resources/icons/USS/proto/sw-l.gif" />
+      </node>
+    </node>
+  </catalogTree>
+</catalogTrees>

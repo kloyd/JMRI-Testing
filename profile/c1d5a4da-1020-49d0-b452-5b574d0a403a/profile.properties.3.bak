@@ -1,0 +1,4 @@
+#JMRI Preferences version 4.18+R37ad3d0
+#Tue Aug 17 19:42:44 CDT 2021
+jmri-implementation.user-files=profile\:
+jmri-implementation.scripts=program\:jython/
